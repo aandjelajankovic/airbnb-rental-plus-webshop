@@ -1,6 +1,9 @@
 # 🛒 Webshop – E-commerce Store  
 
-An interactive e-commerce website with a **shopping cart system**. Users can add and remove products, and the cart state is saved using Web Storage API.  
+A rental platform for apartments. This project focuses on a **responsive and user-friendly UI**, allowing users to browse and view available apartments.  
+
+As part of the assignment, I also developed a **simple webshop** featuring five products that we photographed and edited in Photoshop. While **booking functionality is not implemented**, users can browse available apartments and add products to their cart to have them ready upon arrival.  
+
 
 🚧 **Work in Progress:**  
 - Checkout page needs improvements  
