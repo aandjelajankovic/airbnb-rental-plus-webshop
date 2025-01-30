@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candle - Twelve Rentals</title>
+    <link rel="preload" href="bilder/bakgrund.JPG" as="image">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="products.css">
+</head>
+<body class="candle-page">
+    <div class="overlay"></div>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="bilder/logo.jpg" alt="Twelve Rentals Logo">
+            </a>
+        </div>
+        <nav>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="close-menu">&times;</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="apartments.html">Apartments</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html" id="view-cart">Cart (0)</a></li>
+            </ul>
+        </nav>
+    </header>
+    <nav class="breadcrumbs">
+        <ul>
+            <li><a href="products.html">Products</a></li>
+            <li>Candle</li>
+        </ul>
+    </nav>
+
+    <div class="product-wrapper">
+        <div class="product-details">
+            <img src="bilder_products/doftljus.avif" alt="Candle">
+            <div class="product-info">
+                <h1>Candle</h1>
+                <p class="description">A relaxing scent to set the mood. Perfect for creating a cozy atmosphere.</p>
+                <span class="price">Price: 12€</span>
+                <form action="#" method="POST">
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" id="quantity" name="quantity" min="1" value="1">
+                    <button 
+                    class="add-to-cart"
+                    type="button" 
+                    onclick="addToBasket(this, 'candle001', 'Candle', 12, 'bilder_products/doftljus.avif')">
+                    Add to Cart</button>
+                </form>
+            </div>
+        </div>
+    </div>
+ 
+    <footer>
+        <p>&copy; 2024 Twelve Rentals. All rights reserved.</p>
+    </footer>
+    <script src="webshop.js"></script>
+</body>
+</html>

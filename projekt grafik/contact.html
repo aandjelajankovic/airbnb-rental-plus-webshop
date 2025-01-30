@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Twelve Rentals</title>
+    <link rel="preload" href="bilder/bakgrund.JPG" as="image">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="overlay"></div>
+    <header>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="bilder/logo.jpg" alt="Twelve Rentals Logo">
+                </a>
+            </div>
+            <nav>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="close-menu">&times;</div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="apartments.html">Apartments</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="cart.html" id="view-cart">Cart (0)</a></li>
+                </ul>
+            </nav>
+    </header>
+
+    <main>
+        <h1>Contact Us</h1>
+        <div class="contact-info">
+            <p>If you have any questions, or if you are interested in renting one of our apartments, please fill out the form below and we will get back to you as soon as possible.</p>
+            <p><strong>Email:</strong> <a href="mailto:twelverentals@gmail.com" style="color:blanchedalmond; text-decoration: underline;">twelverentals@gmail.com</a></p>
+        </div>
+
+        <form action="#" method="post" class="contact-form">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="first-name">First Name:</label>
+                    <input type="text" id="first-name" name="first-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="last-name">Last Name:</label>
+                    <input type="text" id="last-name" name="last-name" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number (optional):</label>
+                <input type="tel" id="phone" name="phone">
+            </div>
+
+            <div class="form-group">
+                <label for="interest">Interested in:</label>
+                <select id="interest" name="interest">
+                    <option value="ayia_napa">Ayia Napa Apartment</option>
+                    <option value="larnaca">Larnaca Apartment</option>
+                    <option value="general">General Inquiry</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+
+            <button type="submit" class="submit-button">Send Message</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Twelve Rentals. All rights reserved.</p>
+    </footer>
+    <script src="webshop.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayia Napa Apartment - Twelve Rentals</title>
+    <link rel="preload" href="bilder/bakgrund.JPG" as="image">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="overlay"></div>
+    <header>
+        
+            <div class="logo">
+                <a href="index.html">
+                    <img src="bilder/logo.jpg" alt="Twelve Rentals Logo">
+                </a>
+            </div>
+            <nav>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="close-menu">&times;</div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="apartments.html">Apartments</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="cart.html" id="view-cart">Cart (0)</a></li>
+                </ul>
+            </nav>
+    </header>
+
+    <main>
+        <h1>Ayia Napa Apartment</h1>
+        <p>Explore the spacious and modern apartment in Ayia Napa, with beautiful views and a cozy atmosphere.</p>
+         <div class="intro-text">
+            <p>
+                This is our latest apartment, currently undergoing the final touches to perfection. It will be fully ready within a month. The apartment features four comfortable beds and additional sleeping space for two in the living room, making it ideal for families or groups of friends.
+                <br><br>
+                Located right by the vibrant main street of Ayia Napa, the apartment offers easy access to all the famous bars and clubs, ensuring an exciting nightlife experience. Plus, the beautiful beach is just 600 meters away—perfect for a quick stroll to the sea.
+            </p>
+        </div>
+        
+
+        <div class="gallery">
+            <div class="image-container">
+                <picture>
+                    <source srcset="bilder/an-balcony.avif" type="image/avif">
+                    <img src="bilder/an-balcony.jpg" alt="Ayia Napa Balcony" onclick="openLightbox(this)">
+                </picture>
+            </div>
+            <div class="image-container">
+                <picture>
+                    <source srcset="bilder/an-bathroom.avif" type="image/avif">
+                    <img src="bilder/an-bathroom.jpg" alt="Ayia Napa Bathroom" onclick="openLightbox(this)">
+                </picture>
+            </div>
+            <div class="image-container">
+                <picture>
+                    <source srcset="bilder/an-bedroom.avif" type="image/avif">
+                    <img src="bilder/an-bedroom.jpg" alt="Ayia Napa Bedroom" onclick="openLightbox(this)">
+                </picture>
+            </div>
+            <div class="image-container">
+                <picture>
+                    <source srcset="bilder/an-bedroom2.avif" type="image/avif">
+                    <img src="bilder/an-bedroom2.jpg" alt="Ayia Napa Second Bedroom" onclick="openLightbox(this)">
+                </picture>
+            </div>
+            <div class="image-container">
+                <picture>
+                    <source srcset="bilder/an-kitchen.avif" type="image/avif">
+                    <img src="bilder/an-kitchen.jpg" alt="Ayia Napa Kitchen" onclick="openLightbox(this)">
+                </picture>
+            </div>
+            <div class="image-container">
+                <picture>
+                    <source srcset="bilder/an-livingroom.avif" type="image/avif">
+                    <img src="bilder/an-livingroom.jpg" alt="Ayia Napa Living Room" onclick="openLightbox(this)">
+                </picture>
+            </div>
+            <div class="image-container">
+                <picture>
+                    <source srcset="bilder/an-welcome.avif" type="image/avif">
+                    <img src="bilder/an-welcome.jpg" alt="Ayia Napa Shower" onclick="openLightbox(this)">
+                </picture>
+            </div>
+        </div>        
+        <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+            <img id="lightbox-img" src="bilder/placeholder.jpg" alt="Ayia Napa Apartment">
+        </div>
+        <div class="map-wrapper">
+            <h2>Find us here</h2>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3268.6832645729223!2d33.9916933!3d34.9895976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14dfc53a344442a5%3A0xb6c3f1ead2c5660c!2sLuxury%20Apartment%20Ayianapa%20Center%20Apartment%2052%20Yuri%20Gagarin%201!5e0!3m2!1sen!2sse!4v1730122948434!5m2!1sen!2sse" 
+                width="600" 
+                height="450" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Twelve Rentals. All rights reserved.</p>
+    </footer>
+    <script src="webshop.js"></script>
+
+</body>
+</html>

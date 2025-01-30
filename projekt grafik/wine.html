@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wine - Twelve Rentals</title>
+    <link rel="preload" href="bilder/bakgrund.JPG" as="image">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="products.css">
+</head>
+<body>
+    <div class="overlay"></div>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="bilder/logo.jpg" alt="Twelve Rentals Logo">
+            </a>
+        </div>
+        <nav>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="close-menu">&times;</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="apartments.html">Apartments</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html" id="view-cart">Cart (0)</a></li>
+            </ul>
+        </nav>
+    </header>
+    <nav class="breadcrumbs">
+        <ul>
+            <li><a href="products.html">Products</a></li>
+            <li>Wine</li>
+        </ul>
+    </nav>
+
+      <div class="product-wrapper">
+        <div class="product-details">
+            <img src="bilder_products/vin.avif" alt="Wine">
+            <div class="product-info">
+                <h1>For those that want to relax</h1>
+                <p class="description">Rich red wine, perfect for a relaxing evening. A bright carmine red whose plum and raspberry jam aroma mingle elegantly with vanilla notes from the six months aged in French oak barrels. Well balanced, exhibits sweet tannins and a velvety finish. Enjoy with a meal or by itself.</p>
+                <span class="price">Price: 25€</span>
+                <form action="#" method="POST">
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" id="quantity" name="quantity" min="1" value="1">
+                    <button 
+                    class="add-to-cart"
+                    type="button" 
+                    onclick="addToBasket(this, 'wine001', 'Wine', 25, 'bilder_products/vin.avif')">
+                    Add to Cart</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="wine-info-box">
+        <p class="wine-info-text">And for lovers of white wine, we have some options. In case of interest, contact us</p>
+        
+        <iframe 
+        width="560" 
+        height="315" 
+        src="https://www.youtube.com/embed/MU5v1RcyMHk?si=eV1uphT8ReINoq8o" 
+        title="YouTube video player"  
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin" 
+        allowfullscreen>
+    </iframe>
+    </div>
+    <footer>
+        <p>&copy; 2024 Twelve Rentals. All rights reserved.</p>
+    </footer>
+    <script src="webshop.js"></script>
+
+</body>
+</html>
